@@ -15,5 +15,66 @@ Giving credit while doing so is welcome but not necessary.</br>
 ###### Constants
 
 ENVIRO_DRY_INCREMENT is tripled, meaning clothes will dry 3x faster. Keep in mind that because the base value is really low this modification is barely noticable. Just instead of having 'drenched' clothing after walking around for 2 hours you'll have 'soaked' or maybe 'wet'. It is still much better to dry your clothes next to a fire but if you have 'damp' or 'wet' attire they might dry up by themselves after 30-60 min, removing the annoying wetness icon.</br>
+</br>
 Worn clothes give you the same insulation as pristine ones. I just find it annoying that some attire has best insulation when pristine but only high when in worn condition.</br>
-The character now uses half the energy/water when walking or jogging. Right now even if you're low on food it's still worth it to sprint around trying to find food (especially since the update that makes it so you loose much less health when starving) because even though you're burning more calories you also get that much further. This modification helps players low on food/water, just don't sprint if you don't want to starve.
+<br>
+The character now uses half the energy/water when walking or jogging. Right now even if you're low on food it's still worth it to sprint around trying to find food (especially since the update that makes it so you loose much less health when starving) because even though you're burning more calories you also get that much further. This modification helps players low on food/water, just don't sprint if you don't want to starve.</br>
+</br>
+
+###### Active mine
+
+Adds a landmine variant that is activated when the game places it. It's identical to the normal landmine but is a great tool if you want to create mined zones. (You can define the ground/floor tag on it in types.xml but you can probably create an 'event' that spawns the activated mines in positions that you defined).</br>
+</br>
+
+###### KA-101 45 round magazine
+
+It's just a retextured KA-74 45rnd mag. Even the bullets in the model are 5.45x39 rounds. Not perfect but it's nice to have a 45 round mag if you have the KA-101.</br>
+</br>
+
+###### Armor
+
+Adds 'heavy' variants for platecarrier and gorka helmet. Only the platecarrier has higher ballistic protection, the helmet has double shock protection and a boost in item hp (it won't get ruined after 1 shot). Also adds a 'LTWT' variant for the platecarrier, weighing only 7,8kg.</br>
+</br>
+
+###### Foodstuff
+
+Some retextured food items.</br>
+</br>
+
+###### item_ImmersiveToiletPaper
+
+You get 3 toilet paper variants. 2 used as bandages, having max uses of 10 and 4. The third 'RGD5' version inherits from the RGD5 grenade class, thus you can unpin it and make it explode.</br>
+This one uses the ImmersiveToiletPaper asset but I also fixed some stuff with it: It's no longer dark in inventory view, created a normal map, created LODs and tweaked the physics model.</br>
+</br>
+
+###### item_kotla
+
+Every cooking pot is called kotla now.</br>
+</br>
+
+###### Readables
+
+Adds readable notes. It has some samples but it's up to you to create your own readable collectibles.</br>
+Already has a readable paper and book sample.</br>
+</br>
+
+###### Stun grenade
+
+An MK3A2 grenade which is a retextured flashbang. It uses the flashbang class but has way higher shock damage.</br>
+</br>
+
+###### moddedlight
+
+I will probably tweak this a lot more later. At the moment it prevents the exposure to go up/down too much, making daylight around 9.00 - 14:00 much better.</br>
+</br>
+
+###### Cereal gift
+
+If you look at the back of the cereal box it says you get a compass as a free gift and with this tweak now you really do get one.</br>
+</br>
+
+###### Combine filters
+
+This one gives the ability to combine gasmask filters. Every time you do you loose 10% in the process. Used up filters get removed.</br>
+In the recipe file you can easily change the wasted amount in % by modifying the first variable.</br>
+</br>
