@@ -49,7 +49,7 @@ class CfgVehicles
 		weight=50;
 		absorbency=1;
 		itemSize[]={1,2};
-		inventorySlot[]={"Rags"};
+		inventorySlot[]={"Rags", "NK_Bandage1", "NK_Bandage2"};
 		canBeSplit=0;
 		quantityBar=1;
 		varQuantityInit=10;
@@ -81,7 +81,7 @@ class CfgVehicles
 		weight=50;
 		absorbency=1;
 		itemSize[]={1,2};
-		inventorySlot[]={"Rags"};
+		inventorySlot[]={"Rags", "NK_Bandage1", "NK_Bandage2"};
 		canBeSplit=0;
 		quantityBar=1;
 		varQuantityInit=4;

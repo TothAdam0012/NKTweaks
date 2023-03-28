@@ -101,6 +101,8 @@ class CfgVehicles
 		scope = 2;
 		displayName = "Platecarrier LTWT";
 		weight = 7800;
+		hiddenSelections[] = {"camoGround","camoMale","camoFemale"};
+		hiddenSelectionsTextures[] = {"\dz\characters\vests\data\BallisticVest_camo_co.paa","\dz\characters\vests\data\BallisticVest_camo_co.paa","\dz\characters\vests\data\BallisticVest_camo_co.paa"};
 	};
 	
 	class NK_PlateHeavy: PlateCarrierVest

@@ -27,4 +27,12 @@ class CfgVehicles
 		descriptionShort="Családon belüli erőszak a nap végén";
 		hiddenSelectionsTextures[]={"NK\Tweaks\item_foodstuff\SodaCan_Kobi.paa"};
 	};
+
+	class Edible_Base;
+	class Banana: Edible_Base
+	{
+		displayName = "Banana";
+		descriptionShort = "A banana";
+		//inventorySlot[] += {"Pistol"};
+	};
 };

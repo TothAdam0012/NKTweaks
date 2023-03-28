@@ -1,6 +1,6 @@
 modded class VomitSymptom extends SymptomBase
 {
-	bool IsContaminationActive()
+	override bool IsContaminationActive()
 	{
 		return false;
 	}
@@ -8,7 +8,7 @@ modded class VomitSymptom extends SymptomBase
 
 modded class AreaExposureMdfr: ModifierBase
 {
-	void BleedingSourceCreateCheck(PlayerBase player)
+	override void BleedingSourceCreateCheck(PlayerBase player)
 	{
 		
 	}

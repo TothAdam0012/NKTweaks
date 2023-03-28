@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class NK_shocktweak
+	class NK_tweak_shockdamage
 	{
 		weapons[] = {};
 		requiredVersion = 0.1;

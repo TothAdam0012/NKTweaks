@@ -20,7 +20,7 @@ class CfgMods
 		hidePicture = 1;
 		name = "NK_item_stungrenade";
 		credits = "Zenarchist"; // https://steamcommunity.com/sharedfiles/filedetails/?id=2809135233
-		// I made the stungrande by myself but later found zen's mod and i liked the texture and the name of the grenade so copied that. Thanks zen!
+		// I made the stungrande but copied the texture
 		author = "XM";
 		authorID = "0";
 		version = "1.0";

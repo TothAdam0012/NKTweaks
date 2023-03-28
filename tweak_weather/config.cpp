@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class NK_tweak_maskonly
+	class NK_tweak_weather
 	{
 		units[] = {};
 		weapons[] = {};
@@ -11,16 +11,16 @@ class CfgPatches
 
 class CfgMods
 {
-	class NK_tweak_maskonly
+	class NK_tweak_weather
 	{
-		dir = "NK\Tweaks\tweak_maskonly";
+		dir = "NK\Tweaks\tweak_weather";
 		picture = "";
 		action = "";
 		hideName = 1;
 		hidePicture = 1;
-		name = "NK_tweak_maskonly";
-		credits = "https://steamcommunity.com/sharedfiles/filedetails/?id=2621103156";
-		author = "Crocodoc";
+		name = "NK_tweak_weather";
+		credits = "XM";
+		author = "XM";
 		authorID = "0";
 		version = "1.0";
 		extra = 0;
@@ -31,7 +31,7 @@ class CfgMods
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"NK/Tweaks/tweak_maskonly/scripts/4_World"};
+				files[] = {"NK/Tweaks/tweak_weather/scripts/4_World"};
 			};
 		};
 	};

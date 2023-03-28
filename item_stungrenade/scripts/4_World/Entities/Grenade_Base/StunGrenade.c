@@ -3,7 +3,7 @@ class NK_StunGrenade extends FlashGrenade {
 	void NK_StunGrenade()
 	{
 		SetAmmoType("NK_StunGrenade_Ammo");
-		SetFuseDelay(4);
+		SetFuseDelay(3);
 		SetGrenadeType(EGrenadeType.ILLUMINATING);
 		SetParticleExplosion(ParticleList.GRENADE_M84);
 	}

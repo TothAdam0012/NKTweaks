@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class NK_tweak_namalskheatparticles
+	class NK_loadingscreen
 	{
 		units[] = {};
 		weapons[] = {};
@@ -8,30 +8,29 @@ class CfgPatches
 		requiredAddons[] = {"DZ_Data"};
 	};
 };
-
 class CfgMods
 {
-	class NK_tweak_namalskheatparticles
+	class NK_loadingscreen
 	{
-		dir = "NK\Tweaks\tweak_namalskheatparticles";
+		dir = "NK/Tweaks/loadingscreen";
 		picture = "";
 		action = "";
 		hideName = 1;
 		hidePicture = 1;
-		name = "NK_tweak_namalskheatparticles";
-		credits = "Sumrak";
+		name = "NK_loadingscreen";
+		credits = "https://www.youtube.com/watch?v=5zaGbtRFJ8k";
 		author = "XM";
 		authorID = "0";
 		version = "1.0";
 		extra = 0;
 		type = "mod";
-		dependencies[] = {"World", "Game"};
+		dependencies[] = {"Game"};
 		class defs
 		{
-			class worldScriptModule
+			class gameScriptModule
 			{
 				value = "";
-				files[] = {"NK/Tweaks/tweak_namalskheatparticles/scripts/4_World"};
+				files[] = {"NK/Tweaks/loadingscreen/scripts/3_Game"};
 			};
 		};
 	};

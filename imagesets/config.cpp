@@ -1,37 +1,35 @@
 class CfgPatches
 {
-	class NK_tweak_temperature
+	class NK_tweak_imagesets
 	{
-		units[] = {};
+		units[] = {""};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data"};
 	};
 };
-
 class CfgMods
 {
-	class NK_tweak_temperature
+	class NK_tweak_imagesets
 	{
-		dir = "NK\Tweaks\tweak_temperature";
+		dir = "NK\Tweaks\imagesets";
 		picture = "";
 		action = "";
 		hideName = 1;
 		hidePicture = 1;
-		name = "NK_tweak_temperature";
+		name = "NK_tweak_imagesets";
 		credits = "XM";
 		author = "XM";
 		authorID = "0";
 		version = "1.0";
 		extra = 0;
 		type = "mod";
-		dependencies[] = {"World", "Game"};
+		dependencies[] = {};
 		class defs
 		{
-			class worldScriptModule
+			class imageSets
 			{
-				value = "";
-				files[] = {"NK/Tweaks/tweak_temperature/scripts/4_World"};
+				files[] = {"NK/Tweaks/imagesets/set.imageset"};
 			};
 		};
 	};

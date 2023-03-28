@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class NK_item_9x39spp
+	class NK_tweak_vss
 	{
 		units[] = {};
 		weapons[] = {};

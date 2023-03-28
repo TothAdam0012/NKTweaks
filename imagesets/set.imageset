@@ -1,0 +1,24 @@
+ImageSetClass {
+ Name "NK_set"
+ RefSize 1024 1024
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "NK\Tweaks\imagesets\set.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass nk_slot_injector {
+   Name "nk_slot_injector"
+   Pos 0 0
+   Size 180 180
+   Flags 0
+  }
+  ImageSetDefClass nk_slot_ivbag {
+   Name "nk_slot_ivbag"
+   Pos 180 0
+   Size 180 180
+   Flags 0
+  }
+ }
+}
