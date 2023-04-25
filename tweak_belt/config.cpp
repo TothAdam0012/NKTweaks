@@ -18,12 +18,4 @@ class CfgVehicles
 		inventorySlot[] += {"Belt_Left"};
 	};
 
-	//class Container_Base;
-
-	// A medkit canteen poziban normálisan néz ki az övön
-	/*class FirstAidKit: Container_Base
-	{
-		inventorySlot[] += {"Belt_Left"};
-	};*/
-
 };

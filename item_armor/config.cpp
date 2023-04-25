@@ -99,8 +99,9 @@ class CfgVehicles
 	class NK_PlateLTWT: PlateCarrierVest
 	{
 		scope = 2;
+		weight = 7700;
 		displayName = "Platecarrier LTWT";
-		weight = 7800;
+		descriptionShort = "A standard platecarrier that carries extra lightweight polyethylene plates. Offers the same protection at reduced weight for more maneuverability.";
 		hiddenSelections[] = {"camoGround","camoMale","camoFemale"};
 		hiddenSelectionsTextures[] = {"\dz\characters\vests\data\BallisticVest_camo_co.paa","\dz\characters\vests\data\BallisticVest_camo_co.paa","\dz\characters\vests\data\BallisticVest_camo_co.paa"};
 	};
@@ -108,10 +109,11 @@ class CfgVehicles
 	class NK_PlateHeavy: PlateCarrierVest
 	{
 		scope = 2;
+		weight = 9800;
+		displayName = "Platecarrier LV4";
+		descriptionShort = "A tactical platecarrier vest with built-in level 3A soft armor accompanied with level 4 lightweight polyethylene plates. Superior to the standardized version.";
 		hiddenSelections[] = {"camoGround","camoMale","camoFemale"};
 		hiddenSelectionsTextures[] = {"NK\Tweaks\item_armor\pb_heavy_ttsko_co.paa", "NK\Tweaks\item_armor\pb_heavy_ttsko_co.paa", "NK\Tweaks\item_armor\pb_heavy_ttsko_co.paa"};
-		displayName = "Heavy Platecarrier";
-		descriptionShort = "Ugyanolyan nehéz, mint a sima tányérhordozó, de többet véd!";
 		class DamageSystem
 		{
 			class GlobalHealth

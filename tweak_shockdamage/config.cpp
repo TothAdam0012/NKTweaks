@@ -10,6 +10,10 @@ class CfgPatches
 
 class CfgVehicles
 {
+
+	// shockdamage is halved for arms and legs
+	// Torso shock is default without armor, armor shock is tweaked in 'item_armor' and 'tweak_vest'
+
 	class Man;
 	class SurvivorBase: Man
 	{
@@ -37,7 +41,7 @@ class CfgVehicles
 						{
 							class Health { damage = 1; };
 							class Blood { damage = 1; };
-							class Shock { damage = 1; }; // 1.0
+							class Shock { damage = 1; }; // Torso shock is default without armor, armor shock is tweaked in 'item_armor' and 'tweak_vest'
 						};
 					};
 				};

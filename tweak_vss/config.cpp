@@ -40,6 +40,8 @@ class CfgMagazines
 	{
 		ammo = "Bullet_9x39AP";
 		ammoItems[] = {"Ammo_9x39AP"};
+		hiddenSelections[] = {"zbytek"};
+		hiddenSelectionsTextures[] = {"NK\Tweaks\tweak_vss\val_mag_spp_co.paa"};
 	};
 	
 	class Ammunition_Base;

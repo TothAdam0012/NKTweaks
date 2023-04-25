@@ -15,7 +15,7 @@ class CombineFilters extends RecipeBase
 		m_Name = "#STR_FillFilter";
 		m_IsInstaRecipe = false;
 		m_AnimationLength = 0.5;
-		m_Specialty = 0.02;// value > 0 for roughness, value < 0 for precision
+		m_Specialty = -0.2;// value > 0 for roughness, value < 0 for precision
 
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = 3;//3 = not ruined

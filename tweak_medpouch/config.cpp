@@ -1,5 +1,6 @@
 class CfgPatches
 {
+	// credits: https://steamcommunity.com/sharedfiles/filedetails/?id=2467714725
 	class NK_tweak_medpouch
 	{
 		units[] = {};
@@ -61,6 +62,7 @@ class CfgVehicles
 			"NK_Injector2",
 			"NK_IVBag"
 		};
+		inventorySlot[] += {"Belt_Left"};
 	};
 	
 	class BandageDressing: Inventory_Base
