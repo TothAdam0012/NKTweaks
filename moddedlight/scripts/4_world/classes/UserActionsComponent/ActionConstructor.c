@@ -4,5 +4,6 @@ modded class ActionConstructor
 	{
 		super.RegisterActions(actions);
 		actions.Insert(ActionSwitchLight);
+		actions.Insert(ActionResetLight);
 	}
 };

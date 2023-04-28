@@ -67,25 +67,30 @@ class CfgVehicles
 		descriptionShort = "A note that has readable content.";
 	};
 
-	class NK_readable_shitpost1: NK_readable_note
+	class NK_readable_shitpostbase: NK_readable_note
 	{
 		scope = 2;
+		descriptionShort = "A note that has some questionable content.";
+	};
+
+	class NK_readable_shitpost1: NK_readable_shitpostbase
+	{
 		file = "NK\Tweaks\item_readable\data\shitpost1.html";
 		displayName = "Collectible 1";
-		descriptionShort = "A note that has some questionable content.";
 	};
-	class NK_readable_shitpost2: NK_readable_note
+	class NK_readable_shitpost2: NK_readable_shitpostbase
 	{
-		scope = 2;
 		file = "NK\Tweaks\item_readable\data\shitpost2.html";
 		displayName = "Collectible 2";
-		descriptionShort = "A note that has some questionable content.";
 	};
-	class NK_readable_shitpost3: NK_readable_note
+	class NK_readable_shitpost3: NK_readable_shitpostbase
 	{
-		scope = 2;
 		file = "NK\Tweaks\item_readable\data\shitpost3.html";
 		displayName = "Collectible 3";
-		descriptionShort = "A note that has some questionable content.";
+	};
+	class NK_readable_shitpost4: NK_readable_shitpostbase
+	{
+		file = "NK\Tweaks\item_readable\data\shitpost4.html";
+		displayName = "Collectible 4";
 	};
 };

@@ -3,7 +3,7 @@ class ActionSwitchLight : ActionTurnOnWhileInHands
 
 	void ActionSwitchLight()
 	{
-		m_Text = "DEBUG Turn moddedlight off";
+		m_Text = "[DEBUG] cycle modded lightconfig";
 	}
 	
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
@@ -13,23 +13,13 @@ class ActionSwitchLight : ActionTurnOnWhileInHands
 
 	override void OnExecuteClient( ActionData action_data )
 	{
-		if(action_data.m_Player.HasModdedLight()) {
-			action_data.m_Player.SetModdedLight(false);
-			m_Text = "DEBUG Turn moddedlight on";
-		} else {
-			action_data.m_Player.SetModdedLight(true);
-			m_Text = "DEBUG Turn moddedlight off";
-		}
+		action_data.m_Player.nextModdedLighting();
+
 	}
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-		if(action_data.m_Player.HasModdedLight()) {
-			action_data.m_Player.SetModdedLight(false);
-			NKUtil.SendMessage(action_data.m_Player, "Vanilla lighting");
-		} else {
-			action_data.m_Player.SetModdedLight(true);
-			NKUtil.SendMessage(action_data.m_Player, "Modded lighting");
-		}
+		int currentId = action_data.m_Player.nextModdedLighting();
+		NKUtil.SendMessage(action_data.m_Player, "Modded lighting " + currentId);
 	}
 };

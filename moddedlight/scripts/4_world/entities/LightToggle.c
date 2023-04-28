@@ -1,4 +1,4 @@
-class NK_DebugPaper extends Paper
+class NK_LightToggle extends Paper
 {
 	override void SetActions()
 	{

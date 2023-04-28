@@ -62,7 +62,7 @@ class CfgVehicles
 			"NK_Injector2",
 			"NK_IVBag"
 		};
-		inventorySlot[] += {"Belt_Left"};
+		inventorySlot[] += {"Belt_Left"}; // medpouch can be attached to belt canteen slot
 	};
 	
 	class BandageDressing: Inventory_Base

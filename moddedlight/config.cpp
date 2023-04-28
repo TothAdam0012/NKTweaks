@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data"};
+		requiredAddons[] = {"DZ_Data", "DZ_Gear_Consumables"};
 	};
 };
 
@@ -45,5 +45,17 @@ class CfgMods
 class CfgVehicles
 {
 	class Paper;
-	class NK_DebugPaper: Paper {};
+	class NK_LightToggle: Paper
+	{
+		displayName = "Light toggle";
+		descriptionShort = "Cycle through modded lights.";
+		scope = 2;
+	};
+
+	class NK_LightReset: Paper
+	{
+		displayName = "Light reset";
+		descriptionShort = "Vanilla light.";
+		scope = 2;
+	};
 };
