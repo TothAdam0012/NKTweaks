@@ -31,4 +31,13 @@ class NKUtil
 		}
 		return itemEntity;
 	}
+
+	/**
+	* Return true with 'pct' percent chance
+	*/
+	static bool Chance(float pct) {
+		if(pct <= 0.0) return false;
+		if(pct >= 100.0) return true;
+		return Math.RandomFloat01() < pct/100.0;
+	}
 }

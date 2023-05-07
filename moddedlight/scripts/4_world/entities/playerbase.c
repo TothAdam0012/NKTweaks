@@ -1,22 +1,19 @@
 modded class PlayerBase {
-	int m_moddedLightingId = -1;
 
 	void resetLighting() {
-		m_moddedLightingId = -1;
-		if ( GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT || !GetGame().IsMultiplayer() )
+		if ( GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT || !GetGame().IsMultiplayer() ) {
 			GetGame().GetWorld().LoadNewLightingCfg(GetGame().GetMission().GetWorldLighting().GetVanillaDarkLighting());
+			GetGame().GetWorld().SetUserLightingLerp(0);
+		}
+		
 	}
 
-	int nextModdedLighting() {
-		string lighting = GetGame().GetMission().GetWorldLighting().GetModdedLightingById(++m_moddedLightingId);
-		if(lighting == "") {
-			m_moddedLightingId = 0;
-			lighting = GetGame().GetMission().GetWorldLighting().GetModdedLightingById(0);
-		}
+	void loadModdedLighting() {
 		if ( GetInstanceType() == DayZPlayerInstanceType.INSTANCETYPE_CLIENT || !GetGame().IsMultiplayer() ) {
-			GetGame().GetWorld().LoadNewLightingCfg(lighting);
+
+			GetGame().GetWorld().LoadUserLightingCfg("C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ Server Exp\\mpmissions\\dayzOffline.nekladek\\lighting_better.txt", "Better");
+			GetGame().GetWorld().SetUserLightingLerp(1);
 		}
-		return m_moddedLightingId;
 	}
 
 }

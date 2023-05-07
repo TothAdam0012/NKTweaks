@@ -13,13 +13,12 @@ class ActionSwitchLight : ActionTurnOnWhileInHands
 
 	override void OnExecuteClient( ActionData action_data )
 	{
-		action_data.m_Player.nextModdedLighting();
+		action_data.m_Player.loadModdedLighting();
 
 	}
 
 	override void OnExecuteServer( ActionData action_data )
 	{
-		int currentId = action_data.m_Player.nextModdedLighting();
-		NKUtil.SendMessage(action_data.m_Player, "Modded lighting " + currentId);
+		NKUtil.SendMessage(action_data.m_Player, "Modded lighting");
 	}
 };

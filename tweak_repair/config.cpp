@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {""};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Gear_Tools", "DZ_Gear_Camping", "DZ_Weapons_Supports", "DZ_Weapons_Optics"};
+		requiredAddons[] = {"DZ_Data","DZ_Gear_Tools", "DZ_Gear_Camping", "DZ_Weapons_Supports", "DZ_Weapons_Optics", "DZ_Vehicles_Parts"};
 	};
 };
 
@@ -68,6 +68,16 @@ class CfgVehicles
 		repairCosts[]={25,25};
 	};
 
+	class SparkPlug: Inventory_Base
+	{
+		repairableWithKits[] = {7}; // electrical kit
+		repairCosts[] = {25.0};
+	};
+	class GlowPlug: Inventory_Base
+	{
+		repairableWithKits[] = {7}; // electrical kit
+		repairCosts[] = {25.0};
+	};
 
 	class ItemOptics;
 	class ItemOptics_Base: ItemOptics

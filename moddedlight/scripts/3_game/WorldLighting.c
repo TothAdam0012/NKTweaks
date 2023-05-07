@@ -1,9 +1,5 @@
 modded class WorldLighting {
-	ref TStringArray moddedLighting = {
-		"NK\\Tweaks\\moddedlight\\lighting\\lighting_modded.c",
-		"NK\\Tweaks\\moddedlight\\lighting\\lighting_modded2.c", // unused atm
-		"NK\\Tweaks\\moddedlight\\lighting\\lighting_modded3.c" // unused atm
-	};
+
 	string lighting[] = {
 		"dz\\data\\lighting\\lighting_default.txt", 
 		"dz\\data\\lighting\\lighting_darknight.txt",
@@ -40,10 +36,4 @@ modded class WorldLighting {
 		return lighting[2];
 	}
 
-	string GetModdedLightingById(int id) {
-		if(id >= moddedLighting.Count()) {
-			return "";
-		}
-		return moddedLighting.Get(id);
-	}
 }

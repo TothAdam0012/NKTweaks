@@ -9,6 +9,34 @@ class CfgPatches
 	};
 };
 
+class CfgMods
+{
+	class NK_tweak_durability
+	{
+		dir = "NK\Tweaks\tweak_durability";
+		picture = "";
+		action = "";
+		hideName = 1;
+		hidePicture = 1;
+		name = "NK_tweak_durability";
+		credits = "XM";
+		author = "XM";
+		authorID = "0";
+		version = "1.0";
+		extra = 0;
+		type = "mod";
+		dependencies[] = {"World", "Game"};
+		class defs
+		{
+			class worldScriptModule
+			{
+				value = "";
+				files[] = {"NK/Tweaks/tweak_durability/scripts/4_World"};
+			};
+		};
+	};
+};
+
 class cfgVehicles
 {
 	class ItemSuppressor;
