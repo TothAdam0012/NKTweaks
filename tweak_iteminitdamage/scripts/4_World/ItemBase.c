@@ -3,8 +3,8 @@ modded class ItemBase {
 		if (!IsMagazine() && HasQuantity()) SetCEBasedQuantity();
 
 		// 20% chance to return true
-		if(NKUtil.Chance(99)) {
-			SetHealth(GetMaxHealth() * Math.RandomFloat(0.1, 0.5));
+		if(NKUtil.Chance(20)) {
+			SetHealth(GetMaxHealth() * Math.RandomFloat(0.0, 0.5));
 		}
 		SetZoneDamageCEInit();
 	}
