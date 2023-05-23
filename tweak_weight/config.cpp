@@ -30,41 +30,36 @@ class CfgMagazines
 
 class CfgVehicles
 {
-	class HeadGear_Base;
-	class Top_Base;
-	class Pants_Base;
-	class Mask_Base;
-	class Gloves_Base;
-	class Shoes_Base;
+	class Clothing;
 
 	// ================================================ [ Improvised cloting insulation tweak ] ================================================
 
-	class HeadCover_Improvised: HeadGear_Base
+	class HeadCover_Improvised: Clothing
 	{
 		heatIsolation = 0.3; // improved heat isolation (doubled) from BAD to LOW
 	};
 
-	class TorsoCover_Improvised: Top_Base
+	class TorsoCover_Improvised: Clothing
 	{
 		heatIsolation = 0.3;
 	};
 
-	class LegsCover_Improvised: Pants_Base
+	class LegsCover_Improvised: Clothing
 	{
 		heatIsolation = 0.3;
 	};
 
-	class FaceCover_Improvised: Mask_Base
+	class FaceCover_Improvised: Clothing
 	{
 		heatIsolation = 0.3;
 	};
 
-	class HandsCover_Improvised: Gloves_Base
+	class HandsCover_Improvised: Clothing
 	{
 		heatIsolation = 0.3;
 	};
 
-	class FeetCover_Improvised: Shoes_Base
+	class FeetCover_Improvised: Clothing
 	{
 		heatIsolation = 0.3;
 		class DamageSystem
@@ -96,7 +91,7 @@ class CfgVehicles
 		weight = 900; // 1800
 	};
 
-	class HuntingJacket_ColorBase: Top_Base
+	class HuntingJacket_ColorBase: Clothing
 	{
 		weight = 1650; // 3200
 	};
