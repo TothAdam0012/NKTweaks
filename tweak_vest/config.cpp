@@ -10,9 +10,9 @@ class CfgPatches
 };
 class CfgVehicles
 {
-	class Vest_Base;
+	class Clothing;
 
-	class HighCapacityVest_ColorBase: Vest_Base
+	class HighCapacityVest_ColorBase: Clothing
 	{
 		class DamageSystem
 		{
@@ -37,7 +37,7 @@ class CfgVehicles
 		};
 	};
 
-	class PlateCarrierVest: Vest_Base
+	class PlateCarrierVest: Clothing
 	{
 		class DamageSystem
 		{
@@ -54,7 +54,7 @@ class CfgVehicles
 		};
 	};
 
-	class PressVest_ColorBase: Vest_Base
+	class PressVest_ColorBase: Clothing
 	{
 		class DamageSystem
 		{
@@ -71,7 +71,7 @@ class CfgVehicles
 		};
 	};
 
-	class PoliceVest: Vest_Base
+	class PoliceVest: Clothing
 	{
 		class DamageSystem
 		{
