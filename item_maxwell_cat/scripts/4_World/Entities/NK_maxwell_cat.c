@@ -1,6 +1,6 @@
 class NK_maxwell_cat extends ItemBase
 {
-	protected static string		LOOP_SOUND = "CatLoopMaxwell_SoundSet";
+	protected static string		LOOP_SOUND = "CatLoopMaxwell_item_SoundSet";
 	protected EffectSound 		m_MaxwellLoop;
 
 	override void OnWorkStart()

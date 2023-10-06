@@ -1,8 +1,8 @@
-modded class JMAnimRegister
+modded class ModItemRegisterCallbacks
 {
-	override void OnRegisterOneHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
+	override void RegisterOneHanded(DayZPlayerType pType, DayzPlayerItemBehaviorCfg pBehavior)
     {
-        super.OnRegisterOneHanded( pType, pBehavior );
+        super.RegisterOneHanded( pType, pBehavior );
 
 		pType.AddItemInHandsProfileIK("NK_Toilet_Paper_B10", "dz/anims/workspaces/player/player_main/props/player_main_1h_sodacan.asi", pBehavior, "dz/anims/anm/player/ik/gear/GasCannisterLarge.anm");
 		pType.AddItemInHandsProfileIK("NK_Toilet_Paper_B4", "dz/anims/workspaces/player/player_main/props/player_main_1h_sodacan.asi", pBehavior, "dz/anims/anm/player/ik/gear/GasCannisterLarge.anm");
